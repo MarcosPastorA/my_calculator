@@ -1,4 +1,4 @@
-=================================================
+
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
@@ -7,12 +7,19 @@ function cube() {
  num.value = Math.pow(num.value, 3);
 }
 </script>
+<script type="text/javascript">
+function fourth() {
+var num = document.getElementById("n2");
+num.value = Math.pow(num.value, 4);
+}
+</script>
 </head>
 <body>
- <h1>Calculadora de Marcos Pastor Abajo</h1>
+ <h1>Calculadora de Marcos Pastor Abajo </h1>
  Number:
- <input type="text" id="n1"><p>
- <button onclick="cube()"> x^3 </button>
+ <input type="text" id="n1">
+  <button onclick="cube()"> x^3 </button>
+  <input type ="text" id="n2">
+  <button onclick="fourth()"> x^4</button>
 </body>
 </html>
-=================================================
