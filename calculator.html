@@ -1,3 +1,4 @@
+
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
@@ -6,19 +7,28 @@ function cube() {
  num.value = Math.pow(num.value, 3);
 }
 </script>
-<scrypt type="text/javascript">
+<script type="text/javascript">
 function seno() {
  var num = document.getElementById("n3");
  num.value = Math.sin(num.value);
  }
 </script>
+<script type="text/javascript">
+function fourth() {
+var num = document.getElementById("n2");
+num.value = Math.pow(num.value, 4);
+}
+
+</script>
 </head>
 <body>
- <h1>Calculadora de Marcos Pastor Abajo</h1>
+ <h1>Calculadora de Marcos Pastor Abajo </h1>
  Number:
- <input type="text" id="n1"><p>
+ <input type="text" id="n1">
  <button onclick="cube()"> x^3 </button>
  <input type="text" id="n3">
   <button onclick="seno()">sin(x) </button>
+  <input type ="text" id="n2">
+  <button onclick="fourth()"> x^4</button>
 </body>
 </html>
